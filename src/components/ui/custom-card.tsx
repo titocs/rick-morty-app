@@ -1,5 +1,6 @@
 import { Link } from '@tanstack/react-router'
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import DynamicLCPImage from '../DynamicLCPImage';
 
 interface CardProps {
   id: string
@@ -16,7 +17,10 @@ const CustomCard = ({ id, name, gender, image }: CardProps) => {
           <h1 className='text-center py-1'>{name}</h1>
         </div>
         <div className='h-[277px]'>
-          <LazyLoadImage src={image} className='bg-cover bg-no-repeat w-full h-full object-cover' alt="" />
+          <picture>
+            <source srcSet={image} type="image/webp" />
+            <LazyLoadImage src={image} className='bg-cover bg-no-repeat w-full h-full object-cover' alt="" />
+          </picture>
         </div>
       </div>
     </Link>

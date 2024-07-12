@@ -39,7 +39,7 @@ const CharacterByLocation = () => {
               <ul className='flex flex-wrap flex-col justify-center gap-4 md:flex-row'>
                 {assignedLocations.map((location) => (
                   <li className='transition-all rounded-lg duration-150 border hover:scale-110 hover:border-black'>
-                    <Link to={`/list-character-location/${location.name}`} target='_blank' className='flex justify-between items-center gap-2 rounded-md px-7 py-1'>
+                    <Link to={`/list-character-location/${location.name}`} className='flex justify-between items-center gap-2 rounded-md px-7 py-1'>
                       <p>{location.name}</p>
                       <LuExternalLink size={25} />
                     </Link>
