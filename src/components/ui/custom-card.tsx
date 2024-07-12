@@ -18,9 +18,6 @@ const CustomCard = ({ id, name, gender, image }: CardProps) => {
         <div className='h-[277px]'>
           <LazyLoadImage src={image} className='bg-cover bg-no-repeat w-full h-full object-cover' alt="" />
         </div>
-        <div>
-
-        </div>
       </div>
     </Link>
   )

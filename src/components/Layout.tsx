@@ -51,7 +51,7 @@ const Layout = ({ children }) => {
         </Drawer>
         <div className="flex items-center gap-4 justify-between">
           <Link to="/">
-          <LazyLoadImage src={RickMortyTitle} className="w-24 hidden md:block" alt="title-desktop"/>
+            <LazyLoadImage src={RickMortyTitle} className="w-24 hidden md:block" alt="title-desktop"/>
           </Link>
           <nav>
             <Link to="/character-by-location" className="text-white ml-auto hidden md:block hover:underline">Character by Location</Link>
